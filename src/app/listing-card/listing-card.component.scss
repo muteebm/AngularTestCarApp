@@ -1,8 +1,12 @@
 mat-card {
     background: white;
     color: black;
+    display: flex;
+    flex-direction: column;
     max-width: 600px;
-    min-width: 300px
+    max-height: 600px;
+    min-height: 100px;
+    min-width: 330px
 }
 
 mat-card-title {
@@ -26,5 +30,8 @@ mat-card-actions {
         display: flex;
         flex-direction: column;
         gap: 1px;
+        p {
+            color: #bfbfbf;
+        }
     }
 }

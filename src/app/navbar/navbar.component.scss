@@ -15,7 +15,7 @@ mat-toolbar {
 .tabs {
     display: flex;
     gap: 30px;
-    color: #707371;
+    color: #bfbfbf;
 
     a {
         cursor: pointer;
@@ -24,4 +24,21 @@ mat-toolbar {
 
 .icons-div {
     margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    i {
+        color: black;
+    }
+    button {
+        background: orangered;
+        color: white;
+        font-size: small;
+        border-radius: 10px 10px 10px 10px;
+        border: transparent;
+        span {
+            padding: 40px 20px 40px 20px !important;
+        }
+    }
   }

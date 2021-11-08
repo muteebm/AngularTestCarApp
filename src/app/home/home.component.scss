@@ -9,8 +9,9 @@
 .listing {
     
     display: flex;
+    justify-content: space-around;
     gap: 20px;
-    overflow: scroll;
+    overflow-x: scroll;
     height: 20%;
 }
 
@@ -49,10 +50,70 @@
         display: flex;
         justify-content: space-around;
         gap: 20px;
-        .market_status, .mileage, .transmission, .searches, .views, .sales {
+        .mileage, .transmission, .searches, .views, .sales {
             display: flex;
             flex-direction: column;
             gap: 2px;
+            p {
+                color: #bfbfbf;
+            }
+        }
+        .market_status {
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+            mat-form-field{
+                color: black;
+                height: 20px;
+                border: 1px black solid;
+                mat-select {
+                    color: black;
+                }
+            }  
         }
     }
+}
+
+.stats_card {
+    background: white;
+    color: black;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .dropdowns {
+        display: flex;
+        justify-content: space-around;
+        overflow-y: hidden;
+        .stats_of, .country, .province, .city {
+            font-style: bold;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .stats_listing {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        .stat_data {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .head {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                h2 {
+                    color: grey;
+                }
+            }
+            
+            img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+
 }

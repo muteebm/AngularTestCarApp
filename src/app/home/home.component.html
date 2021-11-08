@@ -1,111 +1,12 @@
 <div class="content">
     <div class="listing">
-        <app-listing-card *ngFor="let card of cards" ></app-listing-card>
+        <app-listing-card *ngFor="let card of cards; let i = index" [class.selected]="i === seletedIndex" (click)="selectIndex(i)"></app-listing-card>
     </div>
-    <mat-card class="details_card">
-        <div class="logo">
-            <img src="/assets/bmw_logo.png" >
-        </div>
-        <div class="details">
-            <h1>BMW 3 Series Gran Limousine</h1>
-            <img src="/assets/bmw.png" >
-        </div>
-        <div class="attributes">
-            <div class="market_status">
-                <p>Market status</p>
-                    <select>
-                      <option value="Today">
-                        Today
-                      </option>
-                      <option value="Yesterday">
-                        Yesterday
-                      </option>
-                    </select>
-            </div>
-            <div class="mileage">
-                <p>1,13,000 KM</p>
-                <i class="fa fas fa-map-marker-alt">Ottowa</i>
-            </div>
-            <div class="transmission">
-                <p>Auto</p>
-                <p>Petrol</p>
-            </div>
-            <div class="searches">
-                <p><b>7.5k</b></p>
-                <p>Searched</p>
-            </div>
-            <div class="views">
-                <p><b>17.2k</b></p>
-                <p>Visited</p>
-            </div>
-            <div class="sales">
-                <p><b>1k</b></p>
-                <p>Sold</p>
-            </div>
-        </div>
-    </mat-card>
+    
+    <app-home-details>
+    </app-home-details>
 
-    <mat-card class="stats_card">
-        <div class="dropdowns">
-            <div class="stats_of">
-                <p>Stats of the</p>
-                <select>
-                    <option value="Today">
-                      Today
-                    </option>
-                    <option value="Yesterday">
-                      Yesterday
-                    </option>
-                  </select>
-            </div>
-            <div class="country">
-                <p>Select country</p>
-                <select>
-                    <option value="Today">
-                      United States
-                    </option>
-                    <option value="Yesterday">
-                      Other
-                    </option>
-                  </select>
-            </div>
-            <div class="province">
-                <p>Select province</p>
-                <select>
-                    <option value="Today">
-                      American
-                    </option>
-                    <option value="Yesterday">
-                      Other
-                    </option>
-                  </select>
-            </div>
-            <div class="city">
-                <p>Select city</p>
-                <select>
-                    <option value="Today">
-                      Hispanic
-                    </option>
-                    <option value="Yesterday">
-                      Other
-                    </option>
-                  </select>
-            </div>
-        </div>
-        <div class="stats_listing">
-            <div class="stat_data">
-                <div class="data">
-                    <div class="head">
-                        <h2>BMW</h2>
-                        <p><b>" Top of the week "</b></p>
-                    </div>
-                    <progress value="70" max="100"></progress>
-                </div>
-                <div class="footer">
-                    <img src="/assets/bmw.png">
-                </div> 
-            </div>
-        </div>
-    </mat-card>
+    <app-home-stats>
+    </app-home-stats>
 </div>
 

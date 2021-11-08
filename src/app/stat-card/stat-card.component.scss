@@ -1,0 +1,37 @@
+.stat_data {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+
+    .data {
+        flex-grow: 2;
+        .head {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            h2 {
+                color: grey;
+            }
+        }
+        progress {
+            width: 100%;
+            background: transparent;
+        }
+        progress::-webkit-progress-bar {background-color: transparent; width: 100%;}
+        progress::-webkit-progress-value {
+            background-color: orangered !important;
+            border-radius: 10px 10px 10px 10px;
+        }
+    }
+    
+    
+    .footer {
+        align-items: right;
+        img {
+            width: 150px;
+            height: 100px;
+        }
+    }
+    
+}

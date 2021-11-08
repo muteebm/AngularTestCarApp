@@ -1,0 +1,51 @@
+<mat-card class="stats_card">
+    <div class="dropdowns">
+        <div class="stats_of">
+            <p>Stats of the</p>
+            <select>
+                <option value="Today">
+                  Today
+                </option>
+                <option value="Yesterday">
+                  Yesterday
+                </option>
+              </select>
+        </div>
+        <div class="country">
+            <p>Select country</p>
+            <select>
+                <option value="Today">
+                  United States
+                </option>
+                <option value="Yesterday">
+                  Other
+                </option>
+              </select>
+        </div>
+        <div class="province">
+            <p>Select province</p>
+            <select>
+                <option value="Today">
+                  American
+                </option>
+                <option value="Yesterday">
+                  Other
+                </option>
+              </select>
+        </div>
+        <div class="city">
+            <p>Select city</p>
+            <select>
+                <option value="Today">
+                  Hispanic
+                </option>
+                <option value="Yesterday">
+                  Other
+                </option>
+              </select>
+        </div>
+    </div>
+    <div class="stats_listing">
+        <app-stat-card *ngFor="let card of cards"></app-stat-card>
+    </div>
+</mat-card>

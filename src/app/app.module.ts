@@ -12,6 +12,9 @@ import {MatSelectModule} from '@angular/material/select';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ListingCardComponent } from './listing-card/listing-card.component';
+import { HomeStatsComponent } from './home-stats/home-stats.component';
+import { HomeDetailsComponent } from './home-details/home-details.component';
+import { StatCardComponent } from './stat-card/stat-card.component';
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { ListingCardComponent } from './listing-card/listing-card.component';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    ListingCardComponent
+    ListingCardComponent,
+    HomeStatsComponent,
+    HomeDetailsComponent,
+    StatCardComponent
   ],
   imports: [
     BrowserModule,

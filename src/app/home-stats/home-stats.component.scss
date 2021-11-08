@@ -1,0 +1,32 @@
+.stats_card {
+    background: white;
+    color: black;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .dropdowns {
+        display: flex;
+        justify-content: space-around;
+        overflow-y: hidden;
+        .stats_of, .country, .province, .city {
+            font-style: bold;
+            display: flex;
+            flex-direction: column;
+            select {
+                width: 150px;
+                height: 30px;
+                border-color: lightgray;
+            }
+        }
+    }
+    .stats_listing {
+        margin-right: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+    }
+
+}

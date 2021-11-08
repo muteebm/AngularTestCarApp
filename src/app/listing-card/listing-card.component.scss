@@ -1,0 +1,30 @@
+mat-card {
+    background: white;
+    color: black;
+    max-width: 600px;
+    min-width: 300px
+}
+
+mat-card-title {
+    display: flex;
+    justify-content: space-between;
+    img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+mat-card-content {
+    display: flex;
+    justify-content: center;
+}
+
+mat-card-actions {
+    display: flex;
+    justify-content: space-around;
+    .searches, .views, .sales {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+}

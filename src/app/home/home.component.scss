@@ -1,0 +1,58 @@
+.content {
+    margin-right: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.listing {
+    
+    display: flex;
+    gap: 20px;
+    overflow: scroll;
+    height: 20%;
+}
+
+.details_card {
+    background: white;
+    color: black;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .logo {
+        img {
+            height: 70px;
+            width: 70px;
+        }
+    }
+    .details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        
+        h1 {
+            width: 200px;
+            font-weight: bolder;
+            overflow: visible;
+            justify-content: center;
+        }
+        img {
+            width: 500px;
+            height: 300px
+        }
+    }
+    .attributes {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        .market_status, .mileage, .transmission, .searches, .views, .sales {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+    }
+}

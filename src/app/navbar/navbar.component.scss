@@ -1,0 +1,27 @@
+* {
+    background: transparent;
+}
+
+mat-toolbar {
+    display: flex;
+    gap: 200px;
+}
+
+.title {
+    margin-right: 30px;
+    color: black;
+}
+
+.tabs {
+    display: flex;
+    gap: 30px;
+    color: #707371;
+
+    a {
+        cursor: pointer;
+    }
+}
+
+.icons-div {
+    margin-left: auto;
+  }

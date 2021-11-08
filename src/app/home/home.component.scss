@@ -100,19 +100,32 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            .head {
-                display: flex;
-                gap: 10px;
-                align-items: center;
-                h2 {
-                    color: grey;
+
+            .data {
+                flex: 70%;
+                .head {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    h2 {
+                        color: grey;
+                    }
+                }
+                progress {
+                    width: 100%;
                 }
             }
             
-            img {
-                width: 70px;
-                height: 70px;
+            
+            .footer {
+                align-items: right;
+                flex: 30%;
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
             }
+            
         }
     }
 
